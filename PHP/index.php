@@ -10,7 +10,7 @@
 <body>
     <div class="container container-menu mt-5 p-4">
             <h1 class="text-center fw-bold">Cadastro de Empresas</h1>
-        <form>
+        <form action="processa.php" method="POST">
             <div class="mb-3">
                 <label class="fw-bold">Nome</label>
                 <input type="text" name="nome" class="form-control" placeholder="Digite o nome da empresa">
@@ -30,14 +30,14 @@
             <div class="mb-3">
                 <label class="fw-bold">Status</label>
                 <select name="status" class="form-select">
-                    <option value="funcionado">Funcionando</option>
-                    <option value="temporariamente-fechada">Temporariamente fechada</option>
-                    <option value="fechada">Fechada</option>
+                    <option value="Funcionando">Funcionando</option>
+                    <option value="Temporariamente fechada">Temporariamente fechada</option>
+                    <option value="Fechada">Fechada</option>
                 </select>
             </div>
             <div class="mb-3">
                 <label class="fw-bold">Data de Fundação</label>
-                <input type="date" name="data-de-fundacao" class="form-control">
+                <input type="date" name="data_de_fundacao" class="form-control">
             </div>
             <input type="submit" value="Enviar" class="btn btn-primary">
         </form>
