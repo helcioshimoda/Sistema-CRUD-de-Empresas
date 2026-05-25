@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
-    <div class="container container-menu mt-5 p-4">
+    <div class="container mt-5 p-4">
             <h1 class="text-center fw-bold">Cadastro de Empresas</h1>
         <form action="processa.php" method="POST">
             <div class="mb-3">
@@ -39,7 +39,10 @@
                 <label class="fw-bold">Data de Fundação</label>
                 <input type="date" name="data_de_fundacao" class="form-control">
             </div>
-            <input type="submit" value="Enviar" class="btn btn-primary">
+            <div>
+                <input type="submit" value="Enviar" class="btn btn-success">
+                <a href="listar.php" class="btn btn-primary">Lista</a>
+            </div>
         </form>
     </div>
 </body>
