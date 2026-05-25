@@ -27,7 +27,8 @@ if( isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['setor']) &&
     );
 
     if($stmt->execute()){
-        echo "Novo chamado criado com sucesso";
+        header('Location: listar.php');
+        exit();
     }else{
         echo "Erro: " . $stmt-> error;
     }
